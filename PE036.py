@@ -1,10 +1,9 @@
 def is_palindrome(n):
     n_str = str(n)
-    is_palindrome = True
-    for i in range(len(n_str)):
-        if n_str[i-1] != n_str[-i]:
-            is_palindrome = False
-    return is_palindrome
+    if n_str == n_str[::-1]:
+        return True
+    else:
+        return False
 
 sum_binary = 0
 for i in range(1000000):
